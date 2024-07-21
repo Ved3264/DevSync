@@ -1,5 +1,5 @@
+{% load static %}
 <!DOCTYPE html>
-{% load static%}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -43,7 +43,35 @@
                 </ul>
             </div>
         </section>
-        <!-- Add other sections here as needed -->
+        <section id="tasks" class="section">
+            <h2>Tasks</h2>
+            <div class="task-list">
+                <h3>Task List</h3>
+                <ul id="task-list">
+                    <!-- Task items will be dynamically added here -->
+                </ul>
+            </div>
+        </section>
+        <section id="resources" class="section">
+            <h2>Resources</h2>
+            <div class="resource-list">
+                <h3>Resource Allocation</h3>
+                <ul id="resource-list">
+                    <!-- Resource items will be dynamically added here -->
+                </ul>
+            </div>
+        </section>
+        <section id="collaboration" class="section">
+            <h2>Collaboration</h2>
+            <div class="chat">
+                <h3>Team Chat</h3>
+                <div id="chat-box">
+                    <!-- Chat messages will be dynamically added here -->
+                </div>
+                <input type="text" id="chat-input" placeholder="Type a message">
+                <button id="send-chat">Send</button>
+            </div>
+        </section>
     </main>
     <script src="{% static 'js/dashbord.js' %}"></script>
 </body>
