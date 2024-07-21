@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevSync Dashboard</title>
+    <link rel="stylesheet" href="{% static 'css/dashbord.css' %}">
+</head>
+<body>
+    <header>
+        <h1>DevSync Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="#overview">Project Overview</a></li>
+                <li><a href="#tasks">Tasks</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#collaboration">Collaboration</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="overview" class="section">
+            <h2>Project Overview</h2>
+            <div class="metrics">
+                <div class="metric">
+                    <h3>Active Projects</h3>
+                    <p id="active-projects">0</p>
+                </div>
+                <div class="metric">
+                    <h3>Upcoming Deadlines</h3>
+                    <p id="upcoming-deadlines">0</p>
+                </div>
+                <div class="metric">
+                    <h3>Tasks Pending</h3>
+                    <p id="tasks-pending">0</p>
+                </div>
+            </div>
+            <div class="project-list">
+                <h3>Projects</h3>
+                <ul id="project-list">
+                    <!-- Project items will be dynamically added here -->
+                </ul>
+            </div>
+        </section>
+        <!-- Add other sections here as needed -->
+    </main>
+    <script src="{% static 'js/dashbord.js' %}"></script>
+</body>
+</html>
